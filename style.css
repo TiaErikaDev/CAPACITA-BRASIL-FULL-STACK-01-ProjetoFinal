@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'rebelton-bold';
+    src: url('fonts/rebelton-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+body{
+    background-color: #40037B;
+    font-family: 'rebelton-bold', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0; 
+    padding: 0;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  
+header img {
+    width: 4.5%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    }
+  
+.video-fundo {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .video-fundo video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(64, 3, 123, 0.8); /* Cor preta com 50% de opacidade (ajuste aqui) */
+    z-index: 0; /* Coloca a camada sobre o vídeo, mas atrás do conteúdo */
+  }
+
+  .abertura {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1; /* Coloca a camada acima do vídeo */
+  }
+
+  .abertura h1 {
+    font-size: 4em;
+    text-align: center;
+    margin: 0;
+    color: #F8FEFF;
+    text-shadow: 2px 2px 3px #000000;
+  }
+
+  .abertura h2 {
+    font-size: 2em;
+    text-align: center;
+    color: #FCFD00;
+    text-shadow: 2px 2px 3px #000000;
+  }
+
+  .abertura a {
+    background-color: #A6DD00; /* Cor de fundo verde (exemplo) */
+    color: white; /* Cor do texto branco */
+    padding: 10px 20px; /* Espaçamento interno (topo/inferior, esquerda/direita) */
+    border-radius: 25px; /* Arredonda as bordas */
+    box-shadow: #000000 2px 2px 3px; /* Sombra do botão */
+    border: none; /* Remove a borda padrão */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor */
+    text-decoration: none; /* Remove o sublinhado padrão de links */
+    text-shadow: 2px 2px 3px #000000;
+  }
+  
+  .abertura a:hover {
+    background-color: #719014; /* Cor de fundo mais escura ao passar o mouse */
+  }
